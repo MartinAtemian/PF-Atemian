@@ -7,7 +7,17 @@ h2{
     font-size: xx-large;
     align-content: center;
     text-align: center;
+    animation: fadeInOut 2s ease infinite;
 }
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
 .card{
     display: flex;
     position: relative;
