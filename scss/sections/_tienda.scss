@@ -1,0 +1,19 @@
+/* TIENDA */
+h2{
+    background-color: rgb(25, 0, 0);
+    color: white;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    align-content: center;
+    text-align: center;
+}
+.card{
+    display: flex;
+    position: relative;
+    align-self: auto;
+}
+.btn{
+    background-color: red;
+}
+

@@ -1,0 +1,122 @@
+/* CONTACTO */
+.iglogo img{
+    height: 250px;
+    position: relative;
+    left: 50px;
+    background-color: black;
+}
+.iglogo a{
+    position: relative;
+    left: 350px;
+    bottom: 150px;
+}
+.wsplogo img{
+    height: 350px;
+    background-color: black;
+}
+.wsplogo a{
+    position: relative;
+    left: 250px;
+    bottom: 200px;
+}
+
+form {
+    margin: 5px;
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    height: 50px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.links span {
+    background-color: rgb(126, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/* CONTACTO */
+/* Para dispositivos pequeños*/
+@media (max-width: 576px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    form input {
+        max-width: 100%;
+    }
+}
+
+/* Para dispositivos medianos*/
+@media (min-width: 577px) and (max-width: 991px) {
+    form input {
+        max-width: 80%;
+    }
+}
+
+/* Para dispositivos grandes*/
+@media (min-width: 992px) {
+    form {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    form input {
+        max-width: 100%;
+    }
+}
+
+/* Para dispositivos pequeños*/
+@media (max-width: 576px) {
+    .iglogo img {
+        height: 150px;
+    }
+
+    .iglogo a {
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .wsplogo img {
+        height: 200px;
+    }
+
+    .wsplogo a {
+        left: 10px;
+        bottom: 10px;
+    }
+}
+
+/* Para dispositivos medianos*/
+@media (min-width: 577px) and (max-width: 991px) {
+    .iglogo img {
+        height: 200px;
+    }
+
+    .iglogo a {
+        left: 30px;
+        bottom: 30px;
+    }
+
+    .wsplogo img {
+        height: 250px;
+    }
+
+    .wsplogo a {
+        left: 20px;
+        bottom: 40px;
+    }
+}

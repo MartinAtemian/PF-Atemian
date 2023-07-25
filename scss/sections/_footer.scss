@@ -1,0 +1,50 @@
+/* FOOTER */
+.footer {
+    margin: 5px;
+    display: flex;
+    background-color: rgb(126, 0, 0);
+    height: 60px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo-footer {
+    height: 55px;
+    margin-left: 8px;
+    padding-top: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.footer-nav img {
+    height: 40px;
+    margin: 0 5px; 
+}
+
+/* FOOTER */
+/* Media query para dispositivos pequeños*/
+@media (max-width: 576px) {
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #logo-footer {
+        margin-bottom: 5px;
+    }
+
+    .footer-nav {
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+
+    .footer-nav img {
+        height: 30px;
+    }
+}

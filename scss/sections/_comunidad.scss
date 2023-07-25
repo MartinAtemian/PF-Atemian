@@ -1,0 +1,63 @@
+/* COMUNIDAD */
+.link-ig, .link-fb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative; 
+    text-align: center; 
+}
+
+.link-ig img, .link-fb img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.link-ig p, .link-fb p {
+    color: rgb(255, 255, 255);
+    background-color: rgba(234, 0, 0, 0.279);
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px;
+}
+
+/* COMUNIDAD */
+/* Para dispositivos pequeños*/
+@media (max-width: 576px) {
+    .link-ig, .link-fb {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .link-ig img, .link-fb img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .link-ig p, .link-fb p {
+        font-size: 16px;
+    }
+}
+
+/* Para dispositivos medianos*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .link-ig, .link-fb {
+        width: 90%;
+    }
+}
+
+/* Para dispositivos grandes*/
+@media (min-width: 992px) {
+    .link-ig {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .link-fb {
+        width: 80%;
+        margin-left: 10%;
+    }
+}

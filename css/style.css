@@ -1,0 +1,422 @@
+@charset "UTF-8";
+/* HEADER */
+header {
+  background-color: #7e0000;
+  height: 90px;
+  margin: 5px;
+  padding-top: 10qpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.Logo {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px; }
+
+/* Navbar */
+.navbar {
+  list-style: none;
+  display: flex;
+  align-items: center; }
+
+.navbar li {
+  border-radius: 15px;
+  padding: 5px; }
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px; }
+
+/* HEADER */
+@media (max-width: 576px) {
+  header {
+    height: 70px; }
+  .Logo {
+    height: 50px; }
+  .navbar {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center; }
+  .navbar li {
+    margin: 0 5px;
+    border-bottom: none; } }
+
+/* Media query para dispositivos medianos*/
+@media (min-width: 577px) and (max-width: 991px) {
+  header {
+    height: 80px; }
+  .Logo {
+    height: 60px; }
+  .navbar {
+    width: 100%;
+    justify-content: center; } }
+
+/* Media query para dispositivos más grandes*/
+@media (min-width: 992px) {
+  header {
+    height: 90px; }
+  .Logo {
+    height: 75px; }
+  .navbar {
+    width: auto;
+    justify-content: space-evenly; } }
+
+/* TIENDA */
+h2 {
+  background-color: #190000;
+  color: white;
+  height: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
+  align-content: center;
+  text-align: center; }
+
+.card {
+  display: flex;
+  position: relative;
+  align-self: auto; }
+
+.btn {
+  background-color: red; }
+
+/* GALERÍA */
+.fotos-eventos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-content: space-around;
+  justify-content: space-around; }
+
+.fotos-eventos div {
+  width: 450px;
+  height: 220px;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center; }
+
+.fotos-eventos img {
+  width: 100%;
+  height: auto;
+  padding: 5px; }
+
+#img1 {
+  position: relative;
+  bottom: 300px;
+  right: 5px; }
+
+#img2 {
+  position: relative;
+  bottom: 70px; }
+
+#img4 {
+  position: relative;
+  bottom: 40px; }
+
+#img5 {
+  position: relative;
+  bottom: 300px; }
+
+#img6 {
+  position: relative;
+  bottom: 310px; }
+
+/* GALERÍA */
+/* Para dispositivos pequeños*/
+@media (max-width: 576px) {
+  .fotos-eventos {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px; }
+  .fotos-eventos div {
+    width: 100%;
+    height: auto; }
+  .fotos-eventos img {
+    width: 100%;
+    height: auto;
+    position: static;
+    bottom: initial;
+    padding: 5px; }
+  #img1, #img4, #img5, #img6 {
+    bottom: 10px; } }
+
+/* Para dispositivos medianos*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .fotos-eventos {
+    grid-template-columns: repeat(2, 1fr); } }
+
+/* Para dispositivos grandes*/
+@media (min-width: 992px) {
+  .fotos-eventos {
+    grid-template-columns: repeat(3, 1fr); } }
+
+/* COMUNIDAD */
+.link-ig, .link-fb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  text-align: center; }
+
+.link-ig img, .link-fb img {
+  max-width: 100%;
+  height: auto; }
+
+.link-ig p, .link-fb p {
+  color: white;
+  background-color: rgba(234, 0, 0, 0.279);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px; }
+
+/* COMUNIDAD */
+/* Para dispositivos pequeños*/
+@media (max-width: 576px) {
+  .link-ig, .link-fb {
+    width: 100%;
+    height: auto;
+    margin-left: 0; }
+  .link-ig img, .link-fb img {
+    max-width: 100%;
+    height: auto; }
+  .link-ig p, .link-fb p {
+    font-size: 16px; } }
+
+/* Para dispositivos medianos*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .link-ig, .link-fb {
+    width: 90%; } }
+
+/* Para dispositivos grandes*/
+@media (min-width: 992px) {
+  .link-ig {
+    width: 70%;
+    margin-left: 15%; }
+  .link-fb {
+    width: 80%;
+    margin-left: 10%; } }
+
+/* CONTACTO */
+.iglogo img {
+  height: 250px;
+  position: relative;
+  left: 50px;
+  background-color: black; }
+
+.iglogo a {
+  position: relative;
+  left: 350px;
+  bottom: 150px; }
+
+.wsplogo img {
+  height: 350px;
+  background-color: black; }
+
+.wsplogo a {
+  position: relative;
+  left: 250px;
+  bottom: 200px; }
+
+form {
+  margin: 5px;
+  background-color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+form input {
+  height: 50px;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  box-sizing: border-box; }
+
+.links span {
+  background-color: #7e0000;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px; }
+
+/* CONTACTO */
+/* Para dispositivos pequeños*/
+@media (max-width: 576px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+    height: auto; }
+  form input {
+    max-width: 100%; } }
+
+/* Para dispositivos medianos*/
+@media (min-width: 577px) and (max-width: 991px) {
+  form input {
+    max-width: 80%; } }
+
+/* Para dispositivos grandes*/
+@media (min-width: 992px) {
+  form {
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%; }
+  form input {
+    max-width: 100%; } }
+
+/* Para dispositivos pequeños*/
+@media (max-width: 576px) {
+  .iglogo img {
+    height: 150px; }
+  .iglogo a {
+    left: 10px;
+    bottom: 10px; }
+  .wsplogo img {
+    height: 200px; }
+  .wsplogo a {
+    left: 10px;
+    bottom: 10px; } }
+
+/* Para dispositivos medianos*/
+@media (min-width: 577px) and (max-width: 991px) {
+  .iglogo img {
+    height: 200px; }
+  .iglogo a {
+    left: 30px;
+    bottom: 30px; }
+  .wsplogo img {
+    height: 250px; }
+  .wsplogo a {
+    left: 20px;
+    bottom: 40px; } }
+
+/* FOOTER */
+.footer {
+  margin: 5px;
+  display: flex;
+  background-color: #7e0000;
+  height: 60px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center; }
+
+#logo-footer {
+  height: 55px;
+  margin-left: 8px;
+  padding-top: 10px; }
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.footer-nav img {
+  height: 40px;
+  margin: 0 5px; }
+
+/* FOOTER */
+/* Media query para dispositivos pequeños*/
+@media (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    height: auto; }
+  #logo-footer {
+    margin-bottom: 5px; }
+  .footer-nav {
+    flex-direction: row;
+    margin-bottom: 5px; }
+  .footer-nav img {
+    height: 30px; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/* BODY */
+body {
+  background-color: black; }
+
+a:hover {
+  background-color: #500000; }
+
+/* MAIN */
+/* INDEX */
+.fondo {
+  opacity: 40%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 5px; }
+
+.fondo img {
+  width: 100%;
+  height: auto; }
+
+.titulo {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center; }
+
+#texto-principal {
+  color: white;
+  background-color: #320000;
+  margin: 5px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box; }
+
+.fotos-principales {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  background-color: none;
+  margin: 5px;
+  overflow: hidden; }
+
+.fotos-principales img {
+  width: 100%;
+  height: auto; }
+
+.fotos-principales img {
+  width: 100%;
+  height: auto; }
+
+#foto3 {
+  width: 670px; }
+
+/* INDEX */
+/* Media query para dispositivos pequeños*/
+@media (max-width: 576px) {
+  .fondo {
+    height: 400px; }
+  .titulo {
+    font-size: 18px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .fotos-principales {
+    grid-template-columns: repeat(1, 1fr); }
+  #foto3 {
+    width: 100%; } }
+
+/* Media query para dispositivos medianos*/
+@media (min-width: 577px) and (max-width: 991px) {
+  .fondo {
+    height: 500px; }
+  .titulo {
+    font-size: 28px; }
+  .fotos-principales {
+    grid-template-columns: repeat(2, 1fr); }
+  #foto3 {
+    width: 100%; } }
