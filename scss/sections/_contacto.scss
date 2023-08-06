@@ -1,24 +1,41 @@
 /* CONTACTO */
-.iglogo img{
-    height: 250px;
-    position: relative;
-    left: 50px;
-    background-color: black;
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
-.iglogo a{
-    position: relative;
-    left: 350px;
-    bottom: 150px;
-}
-.wsplogo img{
-    height: 350px;
-    background-color: black;
-}
-.wsplogo a{
-    position: relative;
-    left: 250px;
-    bottom: 200px;
-}
+    /* Estilos para los logos */
+    .iglogo, .wsplogo {
+      a {
+        display: block;
+        text-align: center;
+      }
+  
+      img {
+        max-width: 400px;
+        height: auto;
+        border-radius: 50%;
+    }
+  }
+
+// form {
+//     margin: 5px;
+//     background-color: rgb(165, 0, 0);
+//     height: 70px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// form input {
+//     height: 50px;
+//     width: 100%;
+//     max-width: 500px;
+//     padding: 10px;
+//     box-sizing: border-box;
+// }
+
 
 form {
     margin: 5px;
@@ -27,23 +44,27 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 form input {
     height: 50px;
     width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.links span {
-    background-color: rgb(126, 0, 0);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px;
-}
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #450000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  // Estilo para la leyenda del campo de entrada (opcional)
+  input::placeholder {
+    font-style: italic;
+  }
 
 /* CONTACTO */
 /* Para dispositivos pequeños*/

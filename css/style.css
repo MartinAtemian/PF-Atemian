@@ -211,25 +211,21 @@ h2 {
     margin-left: 10%; } }
 
 /* CONTACTO */
-.iglogo img {
-  height: 250px;
-  position: relative;
-  left: 50px;
-  background-color: black; }
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; }
 
-.iglogo a {
-  position: relative;
-  left: 350px;
-  bottom: 150px; }
+/* Estilos para los logos */
+.iglogo a, .wsplogo a {
+  display: block;
+  text-align: center; }
 
-.wsplogo img {
-  height: 350px;
-  background-color: black; }
-
-.wsplogo a {
-  position: relative;
-  left: 250px;
-  bottom: 200px; }
+.iglogo img, .wsplogo img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%; }
 
 form {
   margin: 5px;
@@ -237,21 +233,23 @@ form {
   height: 70px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto; }
 
 form input {
   height: 50px;
   width: 100%;
-  max-width: 500px;
-  padding: 10px;
-  box-sizing: border-box; }
+  border: 1px solid #ccc;
+  border-radius: 5px; }
 
-.links span {
-  background-color: #7e0000;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px; }
+input[type="submit"] {
+  background-color: #450000;
+  color: #fff;
+  cursor: pointer; }
+
+input::placeholder {
+  font-style: italic; }
 
 /* CONTACTO */
 /* Para dispositivos pequeños*/
@@ -417,9 +415,6 @@ a:hover {
 .fotos-principales img {
   width: 100%;
   height: auto; }
-
-#foto3 {
-  width: 670px; }
 
 /* INDEX */
 /* Media query para dispositivos pequeños*/
